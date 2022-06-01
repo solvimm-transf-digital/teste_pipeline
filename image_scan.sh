@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Scanning image...."
+echo "Scanning image..."
 IMAGE_REPO_NAME=test-frontend
 aws ecr start-image-scan --repository-name $IMAGE_REPO_NAME  --image-id imageTag=$IMAGE_TAG
 
